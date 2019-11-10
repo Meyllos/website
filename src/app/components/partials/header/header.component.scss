@@ -4,6 +4,42 @@
 .home-header header .container nav a:hover {
     color:#551a59 !important;
 }
-.home-header header .container nav  .send-project {
-    border-color: 2px #1a202c solid;
+.home-header header .container nav  .send-project:hover {
+    color: #fff !important;
+    background:#551a59 !important;
 }
+.home-header .header-body {
+    margin-top:30px;
+}
+.home-header .header-body .header-body-right {
+    padding-top:80px;
+}
+.home-header .header-body .header-body-right .got-idea {
+    color:#551a59 !important;
+}
+.home-header .header-body .header-body-right .got-idea svg path {
+    fill:#551a59 !important;
+    max-width: 45px;
+}
+.home-header .header-body .header-body-right .got-idea .svg-icon {
+        width: 1.5em;
+        height: 1.5em;
+        padding-top:9px;
+}
+.home-header .header-body .header-body-right .social ul{
+    margin: 8px 3px;
+ }
+ 
+.home-header .header-body .header-body-right .social li {
+   float:left;
+   list-style: none;
+   padding: 4px ;
+}
+
+.home-header .header-body .header-body-right .social li .svg-icon{
+    width: 3em;
+    height: 3em;
+ }
+.home-header .header-body .header-body-right .social li svg path {
+    fill:#551a59 !important;
+ }
