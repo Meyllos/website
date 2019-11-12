@@ -6,6 +6,9 @@ Project in `Angular version 7.3.8.`
 ## Install TailwinCSS
 The frontend part is developed with the `TailwinCss` css framework
 
+## Hosting Netlify
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0bfa2d11-215b-4c15-befc-b81c4cba4705/deploy-status)](https://app.netlify.com/sites/meyllos/deploys)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

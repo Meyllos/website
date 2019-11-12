@@ -1,0 +1,45 @@
+.about{
+    background: #1a202c url('../../../../assets/images/bground.svg')no-repeat center;
+    background-size: cover;
+}
+.about .content{
+    margin: auto;
+    max-width: 60rem;
+    color: white;
+}
+.about .content .right{
+    padding-right: 2.5rem;
+}
+.about .content .right h2{
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-family: Gotham-Bold,sans-serif;
+}
+.about .content .right p{
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+}
+.about .content .left{
+    padding-left: 1.5rem;
+
+}
+
+.about .content .left h2{
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-family: Gotham-Bold,sans-serif;
+}
+.about .content .left p{
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+}
