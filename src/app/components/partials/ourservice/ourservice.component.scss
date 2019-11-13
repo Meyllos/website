@@ -1,0 +1,44 @@
+.services{
+    background: url('../../../../assets/images/services-bg.svg') no-repeat left center;
+    background-size: cover;
+    position: absolute;
+    height: 41vh;
+    width: 100%;
+}
+.services .service-body .service-text{
+    padding-top: 40px;
+    width: 480px !important;
+}
+// .services .service-body .service-text p::before{
+//         content: '';
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         width: 40px;
+//         height: 2px;
+//         background-color: #aaaaaa;
+// }
+.services .service-body .service-text p{
+   font-weight: 800;
+   font-size:50px;
+   text-transform: uppercase;
+   line-height: 1.67;
+   letter-spacing: 2px;
+   color:#101820;
+}
+.services .service-body .service-text span{
+    font-weight: 300;
+    line-height: 1.67;
+    color:#101820;
+ }
+.services .service-body{
+    overflow: inherit;
+    width: 940px !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
