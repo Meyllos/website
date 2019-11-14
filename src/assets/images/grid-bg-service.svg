@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 224.001">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8f8f9;
+      }
+
+      .cls-2 {
+        fill: rgba(240,240,240,0.4);
+      }
+    </style>
+  </defs>
+  <g id="Group_99" data-name="Group 99" transform="translate(-655 -1305)">
+    <rect id="Rectangle_7" data-name="Rectangle 7" class="cls-1" width="270" height="224" transform="translate(655 1305)"/>
+    <path id="Exclusion_4" data-name="Exclusion 4" class="cls-2" d="M186,186H58V158.688h0A80.967,80.967,0,0,1,13.833,35.712,81.236,81.236,0,0,1,49.471,6.365,80.9,80.9,0,0,1,126,13.638a81.247,81.247,0,0,1,29.358,35.183A80.443,80.443,0,0,1,161.994,80H58v78.688A81.065,81.065,0,0,0,162,81c0-.328,0-.665-.006-1H186V186Z" transform="translate(739 1343)"/>
+  </g>
+</svg>

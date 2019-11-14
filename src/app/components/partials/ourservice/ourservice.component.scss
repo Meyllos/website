@@ -42,3 +42,38 @@
     padding-right: 30px;
     position: relative;
 }
+
+.services .services-stacks p{
+    font-family: OpenSans, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #101820;
+    margin-bottom: 40px;
+}
+.services .services-stacks p span{
+    color: #551a59;
+
+}
+.grid-service{
+        margin-bottom: 24px;
+        padding: 25px 16px;
+        position: relative;
+        min-height: 235px;
+        background: #F8F8F9 url('../../../../assets/images/grid-bg-service.svg') no-repeat center;
+        background-size: cover;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -moz-transition: 0.3s;
+        transition: 0.3s;
+}
+
+.services-icon-modern .svg-icon{
+    width: 3em;
+    height: 3em;
+}
+.services-icon-modern .svg-icon path{
+    fill: #101820;
+}
