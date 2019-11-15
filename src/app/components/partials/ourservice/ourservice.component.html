@@ -32,32 +32,69 @@
                   </p>
 
                   <div class="flex mb-4 pt-4 services-icon-modern">
-                      <div class="w-1/4 bg-gray-500 h-12 frontend">
+                      <div class="w-1/4 bg-gray-500 h-12 frontend" (mouseover)="showFrontendStacks=true" (mouseout)="showFrontendStacks=false">
                         <svg class="svg-icon" viewBox="0 0 20 20">
                             <path d="M17.701,3.919H2.299c-0.223,0-0.405,0.183-0.405,0.405v11.349c0,0.223,0.183,0.406,0.405,0.406h15.402c0.224,0,0.405-0.184,0.405-0.406V4.325C18.106,4.102,17.925,3.919,17.701,3.919 M17.296,15.268H2.704V7.162h14.592V15.268zM17.296,6.352H2.704V4.73h14.592V6.352z M5.947,5.541c0,0.223-0.183,0.405-0.405,0.405H3.515c-0.223,0-0.405-0.182-0.405-0.405c0-0.223,0.183-0.405,0.405-0.405h2.027C5.764,5.135,5.947,5.318,5.947,5.541"></path>
                         </svg>
-                        <p class="mt-2 text-xl pr-8 text-gray-600">Frondend</p>
+                        <p class="mt-2  text-gray-600" (mouseover)="showFrontendStacks=true" (mouseout)="showFrontendStacks=false">Frontend</p>
                       </div>
-                      <div class="w-1/4 bg-gray-400 h-12 infrastructure">
+                     
+                      <div class="w-1/4 bg-gray-400 h-12 infrastructure" (mouseover)="showInfraStacks=true" (mouseout)="showInfraStacks=false">
                         <svg class="svg-icon" viewBox="0 0 20 20">
                             <path fill="none" d="M16.888,8.614c0.008-0.117,0.018-0.233,0.018-0.352c0-2.851-2.311-5.161-5.16-5.161c-1.984,0-3.705,1.121-4.568,2.763c-0.32-0.116-0.664-0.182-1.023-0.182c-1.663,0-3.011,1.348-3.011,3.01c0,0.217,0.024,0.427,0.067,0.631c-1.537,0.513-2.647,1.96-2.647,3.67c0,2.138,1.733,3.87,3.871,3.87h10.752c2.374,0,4.301-1.925,4.301-4.301C19.486,10.792,18.416,9.273,16.888,8.614 M15.186,16.003H4.433c-1.66,0-3.01-1.351-3.01-3.01c0-1.298,0.827-2.444,2.06-2.854l0.729-0.243l-0.16-0.751C4.02,8.993,4.003,8.841,4.003,8.692c0-1.186,0.965-2.15,2.151-2.15c0.245,0,0.49,0.045,0.729,0.131l0.705,0.256l0.35-0.664c0.748-1.421,2.207-2.303,3.807-2.303c2.371,0,4.301,1.929,4.301,4.301c0,0.075-0.007,0.148-0.012,0.223l-0.005,0.073L15.99,9.163l0.557,0.241c1.263,0.545,2.079,1.785,2.079,3.159C18.626,14.46,17.082,16.003,15.186,16.003"></path>
                         </svg>
-                        <p class="mt-2 text-xl pr-8 text-gray-600">Infrastructure</p>
+                        <p class="mt-2 pr-4 text-gray-600" (mouseover)="showInfraStacks=true" (mouseout)="showInfraStacks=false">Infrastructure</p>
+                        
                       </div>
-                      <div class="w-1/4 bg-gray-500 h-12 backends">
+                      <div class="w-1/4 bg-gray-500 h-12 backends" (mouseover)="showBackendStacks=true" (mouseout)="showBackendStacks=false">
                         <svg class="svg-icon" viewBox="0 0 20 20">
                             <path d="M17.391,2.406H7.266c-0.232,0-0.422,0.19-0.422,0.422v3.797H3.047c-0.232,0-0.422,0.19-0.422,0.422v10.125c0,0.232,0.19,0.422,0.422,0.422h10.125c0.231,0,0.422-0.189,0.422-0.422v-3.797h3.797c0.232,0,0.422-0.19,0.422-0.422V2.828C17.812,2.596,17.623,2.406,17.391,2.406 M12.749,16.75h-9.28V7.469h3.375v5.484c0,0.231,0.19,0.422,0.422,0.422h5.483V16.75zM16.969,12.531H7.688V3.25h9.281V12.531z"></path>
-                          </svg>
-                          <p class="mt-2 text-xl pr-8 text-gray-600">Backend</p>
+                        </svg>
+                          <p class="mt-2  text-gray-600" (mouseover)="showBackendStacks=true" (mouseout)="showBackendStacks=false">Backend</p>
                       </div>
-                      <div class="w-1/4 bg-gray-400 h-12 databases">
+                      <div class="w-1/4 bg-gray-400 h-12 databases" (mouseover)="showDatabaseStacks=true" (mouseout)="showDatabaseStacks=false">
                         <svg class="svg-icon" viewBox="0 0 20 20">
                             <path fill="none" d="M16.227,16.672c0,0.49-0.396,0.889-0.889,0.889H2.883c-0.491,0-0.889-0.398-0.889-0.889V5.107c0-0.491,0.398-0.89,0.889-0.89h7.562V3.328H2.883c-0.982,0-1.779,0.796-1.779,1.779v11.565c0,0.982,0.796,1.779,1.779,1.779h12.455c0.982,0,1.779-0.797,1.779-1.779V10h-0.891V16.672z M15.338,1.549c-1.965,0-3.559,1.593-3.559,3.558c0,1.966,1.594,3.558,3.559,3.558s3.559-1.592,3.559-3.558C18.896,3.142,17.303,1.549,15.338,1.549z M15.338,7.776c-1.475,0-2.668-1.195-2.668-2.669c0-1.474,1.193-2.669,2.668-2.669s2.668,1.195,2.668,2.669C18.006,6.581,16.812,7.776,15.338,7.776z"></path>
                         </svg>
-                        <p class="mt-2 text-xl pr-8 text-gray-600">Database</p>
+                        <p class="mt-2 text-gray-600" (mouseover)="showDatabaseStacks=true" (mouseout)="showDatabaseStacks=false">Database</p>
                       </div>
                     </div>
                     
+                    <div class="hidden sm:flex sm:items-center mt-20 frontend-stack" *ngIf="showFrontendStacks">
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">HTML5</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">CSS3</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">SASS</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">Javascript</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">Typescript</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">React</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">Vue</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">Angular</span>
+                    </div>
+
+                    <div class="hidden sm:flex sm:items-center mt-20 infrastructure-stack" *ngIf="showInfraStacks">
+                          <span class="text-gray-800 text-sm font-semibold  mr-4">Github</span>
+                          <span class="text-gray-800 text-sm font-semibold  mr-4">AWS</span>
+                          <span class="text-gray-800 text-sm font-semibold  mr-4">Heroku</span>
+                          <span class="text-gray-800 text-sm font-semibold  mr-4">Nginx</span>
+                          <span class="text-gray-800 text-sm font-semibold  mr-4">Docker</span>
+                          <span class="text-gray-800 text-sm font-semibold  mr-4">Digital Ocean</span>
+                          <span class="text-gray-800 text-sm font-semibold  mr-4">Netlify</span>
+                    </div>
+
+                    <div class="hidden sm:flex sm:items-center mt-20 backend-stack" *ngIf="showBackendStacks">
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">Nodejs</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">Python</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">Express</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">PHP</span>
+                        <span class="text-gray-800 text-sm font-semibold  mr-4">Apollo GraphQL</span>
+                  </div>
+
+                  <div class="hidden sm:flex sm:items-center mt-20 database-stack" *ngIf="showDatabaseStacks">
+                      <span class="text-gray-800 text-sm font-semibold  mr-4">MongoDB</span>
+                      <span class="text-gray-800 text-sm font-semibold  mr-4">Redis</span>
+                      <span class="text-gray-800 text-sm font-semibold  mr-4">PostgreSQL</span>
+                      <span class="text-gray-800 text-sm font-semibold  mr-4">MySQL</span>
+                </div>
                   
               </div>
             </div>
