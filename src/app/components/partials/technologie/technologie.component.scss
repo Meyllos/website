@@ -1,0 +1,80 @@
+.technologie{
+    background: #551a59;
+}
+.technologie .content .content-right .text-techno h2{
+    font-weight: 600;
+    color: #fff;
+}
+
+.technologie .content .content-right .text-techno p{
+    font-weight: 300;
+    color:#fefefe;
+}
+
+
+.technologie .content .content-right .menu-list{
+    margin-top: 40px;
+ }
+ .technologie .content .content-right .menu-list .left-menu{
+     padding-left: 0;
+ }
+ .technologie .content .content-right .menu-list .left-menu ul li{
+     list-style: none;
+     list-style-position: inside;
+     background:#270829;
+     width: 100%;
+     max-width: 270px;
+     display: block;
+     position: relative;
+     padding: 11px 15px;
+     margin-bottom: 9px;
+ }
+ .technologie .content .content-right .menu-list .left-menu ul li:hover{
+    list-style: none;
+    list-style-position: inside;
+    background:#c69707;
+    width: 100%;
+    max-width: 270px;
+    display: block;
+    position: relative;
+    padding: 11px 15px;
+    margin-bottom: 9px;
+}
+ .technologie .content .content-right .menu-list .left-menu ul li a{
+     color: white;
+     text-decoration: none;
+     display: block;
+     flex: 0 0 auto;
+     padding: 8px 0px 7px;
+ }
+ .technologie .content .content-right .menu-list .left-menu ul li .active{
+     cursor: pointer;
+     background: linear-gradient(to right,  #9c9e9f 0%,#f6f6f6 100%);
+     color: #fff !important;
+
+     width:100%;
+     top:0px;
+     left:0px;
+ }
+ .technologie .content .content-right .menu-list .left-menu ul li a .svg-icon{
+     max-width: 28px;
+     vertical-align: middle;
+ }
+ .technologie .content .content-right .menu-list .left-menu ul li a .svg-icon path{
+    fill: #fff !important;
+    vertical-align: middle;
+}
+ .technologie .content .content-right .menu-list .left-menu ul li a span{
+     color: #7E808C;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 1rem;
+     letter-spacing: -.1px;
+     padding: 12px !important;
+ }
+
+ .technologie .content .content-right .menu-list .left-menu ul li:hover a span{
+    color: #fff;
+    cursor: pointer;
+
+}
