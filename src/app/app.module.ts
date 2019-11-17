@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/partials/header/header.component';
 import { AboutComponent } from './components/partials/about/about.component';
 import { OurserviceComponent } from './components/partials/ourservice/ourservice.component';
 import { TechnologieComponent } from './components/partials/technologie/technologie.component';
+import { FrontendComponent } from './components/partials/stack/frontend/frontend.component';
+import { BackendComponent } from './components/partials/stack/backend/backend.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { TechnologieComponent } from './components/partials/technologie/technolo
     HeaderComponent,
     AboutComponent,
     OurserviceComponent,
-    TechnologieComponent
+    TechnologieComponent,
+    FrontendComponent,
+    BackendComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.609 68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bcbdc4;
+      }
+    </style>
+  </defs>
+  <path id="Subtraction_1" data-name="Subtraction 1" class="cls-1" d="M-424.522-1898h0l-24.631-6.707L-455-1966h60.609l-5.846,61.293L-424.522-1898Zm-17.058-26.954v10.782l17.037,5.328,15.873-4.642,2.046-26.588h-25.314l-.433-4.759h25.87v-10.236h-37.561l2.646,25.362h23.437l-.445,7.962-6.116,2.007-6.456-2.005v-3.211Z" transform="translate(455 1966)"/>
+</svg>

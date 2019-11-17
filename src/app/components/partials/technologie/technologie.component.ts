@@ -9,7 +9,8 @@ export class TechnologieComponent implements OnInit {
 
   @Output() clickMenuLinkActive = new EventEmitter<string>();
 
-  isSelectedMenu : any = 'frontend';
+  showContentStack : any = 'frontend';
+  isSelectedMenu   : any = 'frontend';
 
   constructor() { }
 
@@ -17,12 +18,15 @@ export class TechnologieComponent implements OnInit {
   }
 
   clickMenu(link){
+    console.log(link);
     if(link == 'a'){
-      this.isSelectedMenu = 'frontend'
+      this.isSelectedMenu = 'frontend';
       this.clickMenuLinkActive.emit(this.isSelectedMenu);
+      this.showContentStack = 'frontend';
     }else if(link == 'b'){
-      this.isSelectedMenu = 'backend'
+      this.isSelectedMenu = 'backend';
       this.clickMenuLinkActive.emit(this.isSelectedMenu);
+      this.showContentStack = 'backend';
     }else if(link == 'c'){
       this.isSelectedMenu = 'mobile'
       this.clickMenuLinkActive.emit(this.isSelectedMenu);

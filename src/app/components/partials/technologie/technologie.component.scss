@@ -1,5 +1,5 @@
 .technologie{
-    background: #551a59;
+    background: #13162D;
 }
 .technologie .content .content-right .text-techno h2{
     font-weight: 600;
@@ -11,70 +11,57 @@
     color:#fefefe;
 }
 
-
-.technologie .content .content-right .menu-list{
-    margin-top: 40px;
- }
- .technologie .content .content-right .menu-list .left-menu{
-     padding-left: 0;
- }
- .technologie .content .content-right .menu-list .left-menu ul li{
-     list-style: none;
-     list-style-position: inside;
-     background:#270829;
-     width: 100%;
-     max-width: 270px;
-     display: block;
-     position: relative;
-     padding: 11px 15px;
-     margin-bottom: 9px;
- }
- .technologie .content .content-right .menu-list .left-menu ul li:hover{
-    list-style: none;
-    list-style-position: inside;
-    background:#c69707;
+.technologie .content .content-right .meyllos-tab-nav{
+    margin-top: 40px !important;
+}
+.technologie .content .content-right .meyllos-tab-nav .stack-tab-link {
     width: 100%;
     max-width: 270px;
     display: block;
     position: relative;
+    cursor: pointer;
     padding: 11px 15px;
     margin-bottom: 9px;
+    color: #7E808C;
+    background-color: #0E1124;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+     
 }
- .technologie .content .content-right .menu-list .left-menu ul li a{
-     color: white;
-     text-decoration: none;
-     display: block;
-     flex: 0 0 auto;
-     padding: 8px 0px 7px;
- }
- .technologie .content .content-right .menu-list .left-menu ul li .active{
-     cursor: pointer;
-     background: linear-gradient(to right,  #9c9e9f 0%,#f6f6f6 100%);
-     color: #fff !important;
 
-     width:100%;
-     top:0px;
-     left:0px;
- }
- .technologie .content .content-right .menu-list .left-menu ul li a .svg-icon{
-     max-width: 28px;
-     vertical-align: middle;
- }
- .technologie .content .content-right .menu-list .left-menu ul li a .svg-icon path{
+.technologie .content .content-right .meyllos-tab-nav .stack-tab-link.active {
+    color: #ffffff;
+    background-color: #4c164d;
+}
+.technologie .content .content-right .meyllos-tab-nav .stack-tab-link:hover {
+    color: #ffffff;
+    background:#c69707;
+}
+
+.technologie .content .content-right .meyllos-tab-nav .stack-tab-link > .svg-icon:first-child {
+    max-width: 28px;
+    vertical-align: middle;
+}
+.technologie .content .content-right .meyllos-tab-nav .stack-tab-link > .svg-icon path:first-child {
     fill: #fff !important;
     vertical-align: middle;
 }
- .technologie .content .content-right .menu-list .left-menu ul li a span{
-     color: #7E808C;
-     font-weight: 600;
-     font-size: 16px;
-     line-height: 1rem;
-     letter-spacing: -.1px;
-     padding: 12px !important;
- }
 
- .technologie .content .content-right .menu-list .left-menu ul li:hover a span{
-    color: #fff;
-    cursor: pointer;
+.technologie .content .content-right .meyllos-tab-nav .stack-tab-link > span:last-child {
+    padding-left: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1rem;
+    letter-spacing: -.1px;
+}
 
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
 }
