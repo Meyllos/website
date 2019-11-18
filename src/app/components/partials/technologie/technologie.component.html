@@ -1,5 +1,5 @@
-<div class="technologie">
-    <div class="flex mb-4  sm:py-16 px-10 content">
+<div class="technologie" id="technologies">
+    <div class="flex sm:py-16 px-10 content">
         <div class="w-1/3 bg-gray-500 mr-4 content-right">
            <div class="text-techno">
              <h2 class="pb-4">Our Technologies</h2>
@@ -47,8 +47,12 @@
             
         </div>
         <div class="w-3/4 bg-gray-400 content-left">
-          <app-frontend *ngIf="showContentStack === 'frontend'"></app-frontend>
-          <app-backend  *ngIf="showContentStack === 'backend'"></app-backend>
+          <app-frontend       *ngIf="showContentStack === 'frontend'"></app-frontend>
+          <app-backend        *ngIf="showContentStack === 'backend'"></app-backend>
+          <app-mobile         *ngIf="showContentStack === 'mobile'"></app-mobile>
+          <app-database       *ngIf="showContentStack === 'database'"></app-database>
+          <app-infrastructure *ngIf="showContentStack === 'infrastructure'"></app-infrastructure>
+          <app-autotest       *ngIf="showContentStack === 'autotest'"></app-autotest>
         </div>
     </div>
 </div>

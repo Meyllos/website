@@ -28,17 +28,21 @@ export class TechnologieComponent implements OnInit {
       this.clickMenuLinkActive.emit(this.isSelectedMenu);
       this.showContentStack = 'backend';
     }else if(link == 'c'){
-      this.isSelectedMenu = 'mobile'
+      this.isSelectedMenu = 'mobile';
       this.clickMenuLinkActive.emit(this.isSelectedMenu);
+      this.showContentStack = 'mobile';
     }else if(link == 'd'){
-      this.isSelectedMenu = 'database'
+      this.isSelectedMenu = 'database';
       this.clickMenuLinkActive.emit(this.isSelectedMenu);
+      this.showContentStack = 'database';
     }else if(link == 'e'){
       this.isSelectedMenu = 'infrastructure'
       this.clickMenuLinkActive.emit(this.isSelectedMenu);
-    }else{
-      this.isSelectedMenu = 'autotest'
+      this.showContentStack = 'infrastructure';
+    }else if(link == 'f'){
+      this.isSelectedMenu = 'autotest';
       this.clickMenuLinkActive.emit(this.isSelectedMenu);
+      this.showContentStack = 'autotest';
     }
   }
 

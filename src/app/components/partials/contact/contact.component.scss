@@ -1,0 +1,49 @@
+.contact{
+    background: #4c164d url('../../../../assets/images/map.png') no-repeat;
+    background-size: cover;
+}
+.contact .content .content-right .text-contact{
+    color: #fff;
+}
+.contact .content .content-right .contact-adress .liner{
+    background-color: #0E1124;
+    height: 3px;
+    width: 80px;
+}
+.contact .content .content-right .contact-adress .contact-kinshasa{
+    color: #fff;
+}
+.contact .content .content-right .contact-adress .contact-kinshasa p{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+.contact .content .content-right .contact-adress .contact-kinshasa > span{
+    font-weight: lighter;
+}
+
+.contact .content .content-right .contact-adress .contact-kigali{
+    color: #fff;
+}
+.contact .content .content-right .contact-adress .contact-kigali p{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+.contact .content .content-right .contact-adress .contact-kigali > span{
+    font-weight: lighter;
+}
+.contact .content .content-left .contact-form label{
+    color: #fff !important;
+}
+.contact .content .content-left .contact-form .submit-form button{
+    padding: 12px 35px;
+    color: #fff;
+    border: 2px #13162D solid;
+}
+.contact .content .content-left .contact-form .submit-form button:hover{
+    background: #0E1124;
+    padding: 12px 35px;
+    color: #fff;
+    border: 2px #13162D solid;
+}
