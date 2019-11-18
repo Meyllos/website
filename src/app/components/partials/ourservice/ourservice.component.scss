@@ -1,0 +1,168 @@
+.services{
+    background: url('../../../../assets/images/services-bg.svg') no-repeat left center;
+    background-size: cover;
+    // position: absolute;
+    // height: 41vh;
+    width: 100%;
+}
+.services .service-body .service-text{
+    padding-top: 40px;
+    width: 480px !important;
+}
+// .services .service-body .service-text p::before{
+//         content: '';
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         width: 40px;
+//         height: 2px;
+//         background-color: #aaaaaa;
+// }
+.services .service-body .service-text p{
+   font-weight: 800;
+   font-size:50px;
+   text-transform: uppercase;
+   line-height: 1.67;
+   letter-spacing: 2px;
+   color:#101820;
+}
+.services .service-body .service-text span{
+    font-weight: 300;
+    line-height: 1.67;
+    color:#101820;
+ }
+.services .service-body{
+    overflow: inherit;
+    width: 940px !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.services .services-stacks p{
+    font-family: OpenSans, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #101820;
+    margin-bottom: 40px;
+}
+.services .services-stacks p span{
+    color: #551a59;
+
+}
+.grid-service{
+        margin-bottom: 24px;
+        padding: 25px 16px;
+        position: relative;
+        min-height: 235px;
+        background: #F8F8F9 url('../../../../assets/images/grid-bg-service.svg') no-repeat center;
+        background-size: cover;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -moz-transition: 0.3s;
+        transition: 0.3s;
+}
+// .grid-service:hover{
+//     -webkit-transform: scale(0.9);
+//     -ms-transform: scale(0.9);
+//     transform: scale(0.9);
+// }
+
+.services-icon-modern{
+    text-align: center;
+}
+.services-icon-modern .svg-icon{
+    width: 3.2em;
+    height: 3.2em;
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
+}
+.services-icon-modern .svg-icon path{
+    fill: #101820;
+}
+.services-icon-modern .svg-icon:hover path{
+    fill: #d84806;
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
+}
+.services-icon-modern .frontend:hover p{
+    color: #d84806 !important;
+    font-weight: bold;
+}
+.services-icon-modern .infrastructure:hover p{
+    color: #d84806 !important;
+    font-weight: bold;
+}
+.services-icon-modern .backends:hover p{
+    color: #d84806 !important;
+    font-weight: bold;
+}
+.services-icon-modern .databases:hover p{
+    color: #d84806 !important;
+    font-weight: bold;
+}
+.services-icon-modern p{
+    font-size: 12px !important;
+    color: #888a8b !important;
+    text-align: center !important;
+}
+
+.services-icon-modern .frontend .frontend-stack {
+    font-size: 10px !important;
+}
+.services-stacks .frontend-stack span{
+    font-size: 10px !important;
+    font-weight: 400;
+}
+.services-stacks .infrastructure-stack span{
+    font-size: 10px !important;
+    font-weight: 400;
+}
+.services-stacks .backend-stack span{
+    font-size: 10px !important;
+    font-weight: 400;
+}
+
+.services-stacks .database-stack span{
+    font-size: 10px !important;
+    font-weight: 400;
+}
+
+
+
+@-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+  
+  @keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }

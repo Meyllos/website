@@ -6,8 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ourservice.component.scss']
 })
 export class OurserviceComponent implements OnInit {
+  showFrontendStacks: boolean;
+  showInfraStacks: boolean;
+  showBackendStacks:boolean;
+  showDatabaseStacks:boolean;
 
-  constructor() { }
+  constructor() { 
+    this.showFrontendStacks = false;
+    this.showInfraStacks = false;
+    this.showBackendStacks = false;
+    this.showDatabaseStacks = false;
+  }
 
   ngOnInit() {
   }

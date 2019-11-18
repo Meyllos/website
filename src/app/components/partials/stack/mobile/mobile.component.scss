@@ -1,0 +1,19 @@
+.content-mobile .mobile-item  .items-stack{
+    height: 190px;
+    text-align: center;
+    padding: 25px 36px;
+    vertical-align: middle;
+    background-color: #22253B !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.content-mobile .mobile-item  .items-stack .item-image > img{
+    max-width: 5em !important;
+    text-align: center !important;
+}
+.content-mobile .mobile-item  .items-stack .item-text > span{
+    flex: 100%;
+    margin-top: auto;
+    color: #B0B1B9;
+}
