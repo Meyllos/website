@@ -21,6 +21,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+ @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,500,700,700i&display=swap');
 
  html {
     line-height: 1.15; /* 1 */
@@ -36,6 +37,7 @@
   
   body {
     margin: 0;
+    font-family: 'Rubik', sans-serif;
   }
   
   .svg-icon {
