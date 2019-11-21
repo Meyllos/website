@@ -16,6 +16,7 @@ import { InfrastructureComponent } from './components/partials/stack/infrastruct
 import { AutotestComponent } from './components/partials/stack/autotest/autotest.component';
 import { ContactComponent } from './components/partials/contact/contact.component';
 import { FooterComponent } from './components/partials/footer/footer.component';
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { FooterComponent } from './components/partials/footer/footer.component';
     InfrastructureComponent,
     AutotestComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollTopComponent
   ],
   imports: [
     BrowserModule,
