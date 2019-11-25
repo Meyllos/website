@@ -28,6 +28,32 @@
       </div>
       <div class="w bg-gray-400 content-left">
         <div class="contact-form">
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-4 rounded relative erreur" *ngIf="errorShow" role="alert">
+                <span class="block sm:inline font-bold">Please fill in the fields correctly <span class="pl-32">⛔</span> </span>
+            </div>
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-4 rounded relative success" *ngIf="succesShow" role="alert">
+                <span class="font-bold">Thank you!</span> &nbsp;
+                <span class="block sm:inline">Your message has been sent 📬📨</span>
+            </div>
+            <div class="bg-red-100 border border-red-400  flex inline-block text-red-700 px-4 py-3 mb-4 rounded relative inprogress" *ngIf="sendingShow" role="alert">
+                  <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                  <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                    s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                    c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+                  <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                    C22.32,8.481,24.301,9.057,26.013,10.047z">
+                    <animateTransform attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 20 20"
+                      to="360 20 20"
+                      dur="0.5s"
+                      repeatCount="indefinite"/>
+                    </path>
+                  </svg> &nbsp;
+                <span class="block sm:inline font-bold"> Please Wait..... your message is sending </span>
+            </div>
             <form class="w-full max-w-lg"  [formGroup] ="contactForm" (ngSubmit)="onSubmit()">
                 <div class="flex flex-wrap -mx-3 mb-6">
                   <div class="w-full px-3">
@@ -38,6 +64,7 @@
                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                      id="grid-password" 
                      type="text"
+                     placeholder="Joeyes Malaba"
                      [ngClass]="{ 'border-red': submitted && bb.fullname.errors }"
                      formControlName="fullname">
 
@@ -55,6 +82,7 @@
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                        id="grid-first-name" 
                        type="email" 
+                       placeholder="joeyers@hotmail.fr"
                        formControlName="email"
                        [ngClass]="{ 'border-red': submitted && bb.email.errors }">
                        
@@ -71,7 +99,7 @@
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
                       id="grid-last-name" 
                       type="text"
-                      placeholder="eg:243897723966"
+                      placeholder="eg: 243897723966"
                       formControlName="phone"
                       [ngClass]="{ 'border-red': submitted && bb.phone.errors }">
                       <div *ngIf="submitted && bb.phone.errors" class="invalid-feedback">
@@ -99,24 +127,9 @@
                 </div>
                 <div class="submit-form">
                     <button [disabled]="loadingSubmit" class="bg-transparent max-w-sm text-blue-700 font-semibold py-2 px-4 border border-blue-500  rounded">
-                        <div *ngIf="loadingSubmit" class="loader loader--style1" title="0">
-                            <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-                            <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
-                              s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
-                              c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
-                            <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
-                              C22.32,8.481,24.301,9.057,26.013,10.047z">
-                              <animateTransform attributeType="xml"
-                                attributeName="transform"
-                                type="rotate"
-                                from="0 20 20"
-                                to="360 20 20"
-                                dur="0.5s"
-                                repeatCount="indefinite"/>
-                              </path>
-                            </svg>
-                          </div>
+                        <span *ngIf="loadingSubmit" class="loader loader--style1" title="0">
+                            Sending ....
+                          </span>
                           <span *ngIf="TextBtnSignup">Submit</span>
                     </button>
                 </div>

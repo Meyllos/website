@@ -10,6 +10,47 @@
 .about .content .right{
     padding-right: 2.5rem;
 }
+.about .content .right .about-image{
+    width: 637px;
+    height: 476px;
+    position: relative;
+}
+.about .content .right .about-image .about-image-under, .image{
+    position: absolute;
+    box-shadow: 0 0 1px 0 rgba(24,51,47,.24), 
+    0 24px 24px 0 rgba(24,51,47,.03),
+    0 2px 2px 0 rgba(24,51,47,.03), 
+    0 4px 4px 0 rgba(24,51,47,.03), 
+    0 8px 8px 0 rgba(24,51,47,.03), 
+    0 16px 16px 0 rgba(24,51,47,.03);
+}
+.about .content .right .about-image .image{
+    position: absolute;
+    width: 543px;
+    height: 440px;
+    top: 0;
+    left: 0;
+}
+.about .content .right .about-image .about-image-under img{
+    border-radius: 4px !important;
+}
+.about .content .right .about-image .image img{
+    border-radius: 4px !important;
+}
+
+.about .content .right .about-image .about-image-under .portail-image .image, .image-bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.about .content .right .about-image .about-image-under{
+    width: 528px;
+    height: 412px;
+    background: url("../../../../assets/images/socials/under.jpg") no-repeat 100% 100%;
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+}
 .about .content .right h2{
     color: #fff;
     font-size: 3.5rem;

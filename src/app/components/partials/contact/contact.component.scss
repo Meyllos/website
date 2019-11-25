@@ -33,6 +33,45 @@
 .contact .content .content-right .contact-adress .contact-kigali > span{
     font-weight: lighter;
 }
+.contact .content .content-left .contact-form .erreur{
+    border: 1px #c53030 solid;
+    color: #fff!important;
+    background-color: #f03030!important;
+    animation:fadeIn 1s linear;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-animation: fadeOut 7s linear forwards;
+    animation: fadeOut 7s linear forwards;
+}
+.contact .content .content-left .contact-form .success{
+    color: #fff!important;
+    background-color: #076d0f!important;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-animation: fadeOut 7s linear forwards;
+    animation: fadeOut 7s linear forwards;
+  
+}
+.contact .content .content-left .contact-form .inprogress{
+    color: #fff!important;
+    background-color: #0c019b!important;
+    display: flex;
+    align-items: center;
+    vertical-align:middle;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-animation: fadeOut 7s linear forwards;
+    animation: fadeOut 7s linear forwards;
+}
+.contact .content .content-left .contact-form .inprogress svg path{
+    fill: #fff!important;
+}
 .contact .content .content-left .contact-form label{
     color: #fff !important;
 }
@@ -46,4 +85,21 @@
     padding: 12px 35px;
     color: #fff;
     border: 2px #13162D solid;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% 	{ opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; -webkit-transform: translateY(0px);}
+    99% { opacity: 0; -webkit-transform: translateY(-30px);}
+    100% { opacity: 0; }
 }

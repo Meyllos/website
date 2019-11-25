@@ -6,25 +6,19 @@ Project in `Angular version 7.3.8.`
 ## Install TailwinCSS
 The frontend part is developed with the `TailwinCss` css framework
 
+## Send a Nofication
+Angular Toastr Notifications
+Install ```ngx-toastr```
+install ```@angular/animations```
+
 ## Hosting Netlify
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0bfa2d11-215b-4c15-befc-b81c4cba4705/deploy-status)](https://app.netlify.com/sites/meyllos/deploys)
 
-## Development server
+### Clone the project from github
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+$ git clone https://github.com/Meyllos/website-serve.git
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Contributors
+<ul>
+  <li> BBasabana - https://github.com/bbasabana  </li>
+</ul>
