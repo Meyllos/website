@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ContactService } from './services/contact.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +19,7 @@ import { InfrastructureComponent } from './components/partials/stack/infrastruct
 import { AutotestComponent } from './components/partials/stack/autotest/autotest.component';
 import { ContactComponent } from './components/partials/contact/contact.component';
 import { FooterComponent } from './components/partials/footer/footer.component';
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
 
 
 @NgModule({
@@ -33,13 +37,18 @@ import { FooterComponent } from './components/partials/footer/footer.component';
     InfrastructureComponent,
     AutotestComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollTopComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

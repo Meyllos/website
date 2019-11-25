@@ -1,0 +1,29 @@
+.footer{
+    background:#15141f ;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+.footer .footer-content{
+    padding: 8px;
+}
+.footer .footer-content .logo{
+    margin-left: 21px !important;
+}
+.footer .footer-content .logo .logo-image a > img{
+    width: 10em;
+}
+
+.footer .social .social-footer{
+    margin-left: 28px;
+    margin-top: 1rem;
+}
+.footer .social .social-footer .social-network >span{
+    padding-right: 12px;
+}
+.footer .social .social-footer .social-network span svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+.footer .social .social-footer .social-network span svg  path{
+    fill: #a1a1a5;
+}
