@@ -75,3 +75,68 @@
 .home-header .header-body .header-body-right .social .social-network  span svg path {
     fill:#551a59 !important;
  }
+
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+
+ /* Responsive */
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    
+}
+    
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    .home-header header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -25px;
+    }
+    .home-header header .container {
+       padding-left: 0 !important;
+       margin-left: 0 !important;
+       height: 0 !important;
+    }
+    .home-header header .container nav{
+       display: none;
+    }
+    .home-header header .container a img{
+       height: 2.5rem !important;
+    }
+    .home-header header .menu-mobile{
+       display: flex;
+       padding-bottom: 2.25rem !important;
+    }
+    .home-header .header-body{
+       padding-top: 0 !important;
+       padding-bottom: 4rem;
+       padding-left: 1rem;
+       padding-right: 1rem;
+    }
+    .home-header .header-body .header-body-right .leading-tight{
+       font-weight: 600 !important;
+    }
+    .home-header .header-body .header-body-right .got-idea-mobile{
+       margin-top: 1.5rem !important;
+    }
+    .home-header .header-body .header-body-right .social{
+       margin-top: 3rem !important;
+    }
+    
+}
+    
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    
+}
+
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+    /* CSS */
+}
