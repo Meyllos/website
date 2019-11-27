@@ -84,3 +84,58 @@
     word-break: break-word;
 
 }
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 1100px){
+    .about .content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .about .content .right{
+        width: 100% !important;
+    }
+    .about .content .right .about-image .about-image-under{
+       display: none;
+    }
+}
+
+@media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    .about .content .right .about-image .about-image-under {
+        background: url("../../../../assets/images/socials/under.jpg") no-repeat;
+        background-position: 100% 100% !important;
+        background-size: contain !important;
+        position: relative !important;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .about .content .left{
+        margin: 0;
+        width: 100%;
+    
+    }
+}
+@media screen and (max-width: 600px){
+    .about .content .left h2{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .about .content .left p{
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 16px;
+    }
+    .about .content .left .second-mobile-text{
+        margin-bottom: 12px;
+        margin-top: -8px;
+    }
+
+}
