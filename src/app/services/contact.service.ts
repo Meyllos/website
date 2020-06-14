@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { map } from 'rxjs/operators';
 import { Contact } from '../constants/contact';
-import { ApiUrlConfig } from '../constants/endpoint';
 
 console.log('Process env', environment)
 @Injectable({
